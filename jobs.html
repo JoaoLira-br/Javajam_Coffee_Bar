@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- TODO: configure viewport for meta-->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="description" content="If you are looking for a job that is satisfying and just can`t get tired of coffee smell,
+  come work with us! Javajam Coffee Bar has many job positions open for application and we will be glad to receive you!" />
+  <title>JavaJam Coffee Bar Jobs</title>
+  <link rel="stylesheet" href="css/javajam.css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1 class="titleCoffeeBar">JavaJam Coffee Bar</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="Music.html">Music</a></li>
+        <li><a href="Jobs.html">Jobs</a></li>
+        <li><a href="gear.html">Gear</a></li>
+      </ul>
+
+
+    </nav>
+    <!-- TODO: fazer um div tipo homehero com a imagem images/mugs.jpg -->
+    <main>
+      <div id="herojobs">
+      </div>
+
+      <h2>Jobs at JavaJam</h2>
+      <br>
+      <p>Want to work at JavaJam? Fill out the form below to start your application. All information is required.</p>
+      <br>
+      <!-- TODO: configure action property to where streaming lecture or chapter 9 says -->
+      <form class="jobsForm" method="post" action=" https://webdevbasics.net/scripts/javajam8.php.">
+        <!-- label "for" -> form control, indica pra quem o label esta se referindo-->
+        <!-- input "type"->especifica textbox "required"->indica que e requerido pra prosseguir -->
+        <label for="myName">Name</label>
+        <input id="myName" type="text" name="myName" value="" required>
+        <label for="myEmail">E-mail</label>
+        <input id="myEmail" type="email" name="myEmail" value="" required>
+        <label for="myStart">Start Date</label>
+        <input id="myStart" type="date" name="myStart" value="" required>
+        <label for="myExperience">Experience</label>
+        <textarea id="myExperience" name="myExperience" rows="2" cols="20" heirequired></textarea>
+        <input id="mySubmit" type="submit" value="Apply Now" name="button"></input>
+      </form>
+
+
+
+    </main>
+    <br>
+    <!-- TODO: ajustar posicao footer: tem um gap feio em baixo -->
+    <footer id="menuFooter">
+      Copyright &copy; 2022 JavaJam Coffee Bar<br>
+      <a href="mailto:jlira@iastate.edu">jlira@iastate.edu</a>
+
+    </footer>
+  </div>
+</body>
+
+</html>

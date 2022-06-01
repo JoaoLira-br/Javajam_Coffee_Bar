@@ -1,0 +1,412 @@
+/* TODO: ISNERIR A IMAGEM EM ALGUM LUGAR */
+* {box-sizing: border-box;}
+body {
+  background-color: #D2B48C;
+  color: #221811;
+  margin: 0;
+  font-family: Tahoma,Arial, sans-serif;
+}
+
+
+/*
+.wrapper{
+  height:100px;
+  align-content: center;
+  text-align: center;
+  font-size: 25px;
+  top:50px;
+  display:inline-block;
+  padding:0px;
+}
+*/
+/* TODO: modify header */
+#wrapper{
+  background-color: #231814;
+  padding: 0;
+
+}
+header {
+  background-color: #D2B48C;
+  background-image: url(../images/cup.jpg);
+  background-repeat:no-repeat;
+  text-align: center;
+  color: #231814;
+  height: 128px;
+  padding-left: 105px;
+  padding-top:5px;
+  padding-bottom: 5px;
+  /*
+  min-height:128px;
+
+  padding-left: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color:#231814;
+  */
+}
+
+header a{
+text-decoration: none;
+}
+header a:link{
+color:#231814;
+}
+header a:visited{
+color:#231814;
+}
+header a:hover{
+color:#FEF6C2;
+}
+/* TODO: modify hedaer a selectors: only modify links inside header tags */
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+color: #8C3826;
+
+
+}
+h3,dt {
+color:#8C3826;
+}
+h4{
+
+  background-color: #D2B48C;
+  font-size: 1.2em;
+  /* NOTE:  */
+  padding-left: .5em;
+  padding-bottom: 0;
+  text-transform:uppercase;
+  border-bottom:1px solid #221811;
+  clear:left;
+}
+
+nav {
+
+
+    font-size: 1.5em;
+    text-align: center;
+
+}
+nav a{
+  text-decoration: none;
+
+
+}
+nav a:link{
+color:#FEF6C2;
+}
+nav a:visited{
+color:#D2B48C;
+}
+nav a:hover{
+color:#CC9933;
+}
+nav ul{
+display:flex;
+flex-direction: column;
+list-style-type: none;
+margin:0;
+padding:0;
+font-size: 1.25em;
+}
+nav li{
+  border-bottom:1px solid #FEF6C2;
+  padding:.5em 1em;
+  width:100%;
+
+}
+main {
+padding:0 0 2em 0;
+display: block;
+background-color: #FEF6C2;
+
+/* NOTE:  */
+
+}
+/* TODO: configurar main unordered lists */
+h2,h3,h4,p,div,ul,dl{ padding-left:1em;padding-right:1em;}
+
+main ul{
+padding:2em;
+}
+
+img{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+form{
+  display:flex;
+  padding-left: 1em;
+  width:80%;
+
+}
+input, textarea{
+  margin-bottom: .5em;
+}
+.details{padding-left: 20%;
+  padding-right:20%;
+  overflow:auto;
+}
+.item{
+  background-color: #FAF9F7;
+  margin:1em;
+  padding:1em;
+  overflow: auto;
+}
+.item img{
+  float: right;
+  min-width: 161px;
+  min-height: 150px;
+}
+#herocouch{
+  min-height:300px;
+  background-image: url(../images/Chapter12/herocouch.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#homehero{
+  height:300px;
+  background-image:url(../images/road.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#heromugs{
+
+  background-size:100% 100%;
+  min-width:  110%;
+  min-height: 300px;
+
+  background-image: url(../images/threemugs.jpg);
+}
+#heroguitar{
+  height:300px;
+  width:110%;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+  background-image: url(../images/guitar.jpg);
+}
+/* NOTE: PATH Parenthesis confirm */
+#herojobs{
+  height:300px;
+  background-image: url(../images/Chapter9/coffeecup.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}
+
+#mobile{
+display:inline;
+ }
+#desktop{
+display:none;
+}
+footer {
+      background-color: #D2B48C;
+      font-size: .60em;
+      font-style: italic;
+      text-align: center;
+      padding-bottom: 1em;
+      border-top:2px solid #8C3826;
+}
+/* TODO: modificar table attributes */
+table {
+  margin:auto;
+  width:90%;
+  background-color:#FFF9D1;
+  border-spacing: 0px;
+  border: collapse;
+  min-height: 200px;
+
+
+
+
+}
+/* TODO: modificar table head e data */
+th,td{
+border: collapse;
+font-size: 1.2em;
+}
+form{
+  width:40%;
+  display:grid;
+  grid-gap: 1em;
+  /* NOTE: grid-template-columns configures columns from left to right */
+  /* NOTE: here there are 2 widths, thus there will be 2 columns */
+  grid-template-columns: 6em 1fr;
+
+}
+/* TODO: configurar zebra style pra table rows */
+tr:nth-of-type(odd){
+background-color:#D2B48C;
+}
+audio{
+  display: block;
+  margin-top: 1em;
+}
+
+
+@media(min-width:600px){
+  header{
+    padding-left: 0;
+    text-align: center;
+  }
+  h1{
+    font-size: 3em;
+  }
+  nav ul{
+    flex-flow:row nowrap;
+    justify-content: space-around;
+  }
+  nav li{
+    border-bottom: none;
+  }
+  form{
+    width:40%;
+    display:grid;
+    grid-gap: 1em;
+    /* NOTE: grid-template-columns configures columns from left to right */
+    /* NOTE: here there are 2 widths, thus there will be 2 columns */
+    grid-template-columns: 6em 1fr;
+
+  }
+  /* TODO: only submit buttons */
+  /* TODO: adjust grid-column to fit properly withing grid */
+  input[type=submit]{
+    grid-column: 2;
+    width:9em;
+  }
+  #homehero{
+    background-image: url(../images/hero.jpg);
+    height:50vh;
+  }
+  #heromugs{
+    background-image: url(../images/heromugs.jpg);
+  }
+  #heroguitar{
+    background-image: url(../images/heroguitar.jpg);
+  }
+  #flow{
+    display:flex;
+    flex-direction: row;
+  }
+  #mobile{
+    display:none;
+  }
+  #desktop{
+    display:inline;
+  }
+  /* NOTE: path parenthesis confirm direction */
+  #herojobs{
+    background-image: url(../images/Chapter9/herojobs.jpg)
+
+  }
+  .details{
+    display:flex;
+    flex-direction:row;
+  }
+  h4{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+/* NOTE: PERGUNTA: porque tem texto cinza, nao era pra ser verde */
+@media (min-width:1024px){
+  @supports (display:grid){
+    header{grid-area:header;}
+    mav{grid-area:nav;}
+    main{grid-area:main;}
+    footer{grid-area:footer;}
+    #wrapper{display:grid;
+            grid-template:
+            "header header"
+            "nav main"
+            "footer footer"
+            /200px;}
+  }
+  nav ul{
+    flex-direction: column;
+  }
+  header{background-image: url(../images/coffeelogo.jpg);}
+  /* NOTE: PAREI AQUI AS 11:23 am */
+
+  /* header{
+
+    min-height:128px;
+    padding-left: 105px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color:#231814;
+  } */
+}
+
+
+/* @media (min-width:600px) and (max-width:1024px){
+h1 {
+  font-size: 3em;
+}
+nav ul{
+  justify-content: space-around;
+  flex-flow:row nowrap;
+}
+nav li{
+  border-bottom-style: none;
+
+}
+
+
+}
+
+@media (min-width:1024px){
+
+
+
+} */
+
+#mugs {
+  width:700px;
+  height:500px;
+  position: relative;
+  left: 1000px;
+  bottom: 200px;
+  display: inline;
+
+}
+dl{
+  display:block;
+  font-weight: bold;
+
+}
+p{
+  display:block;
+}
+dd{
+  font-weight: normal;
+  font-size: 25px;
+}
+dt{
+  color: #8C3826;
+}
+
+
+
+
+#melanieImg{
+  width:100px;
+  height:100px;
+}
+#gregImg{
+  width:100px;
+  height:100px;
+}
+
+
+#january{
+  background-color:  #D2B48C;
+  font-style: bold;
+}
+
+/*
+/* NOTE: on smartphone */
